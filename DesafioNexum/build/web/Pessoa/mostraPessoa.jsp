@@ -38,7 +38,6 @@
         <div class="Info">
             <table>
                 <tr>
-                    <th class="id_tableInfo">id</th>
                     <th>Nome</th>
                     <th>CPF / CNPJ</th>
                     <th>Email</th>
@@ -60,7 +59,6 @@
                         String urlUpdate = "update/formsPessoaUpdate.jsp?id="+lista.get(i).getId();
                 %>
                 <tr>
-                    <td><%=id%></td>
                     <td><%=nome%></td>
                     <td><%=numeroCadastro%></td>
                     <td><%=email%></td>

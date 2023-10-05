@@ -43,7 +43,7 @@ public class PessoaDAO {
         if(nameSource != ""){
             sql = "SELECT * FROM pessoa WHERE nome LIKE '%"+nameSource +"%' ORDER BY nome";
         }else{
-            sql = "SELECT * FROM pessoa";
+            sql = "SELECT * FROM pessoa ORDER BY nome ASC;";
         }
         con = new ConexaoDAO().conexaoBD();
         
