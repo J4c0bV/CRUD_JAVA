@@ -1,0 +1,198 @@
+body, h1, h2{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.cabecalho,.HeaderFormPessoa {
+    background-color: #dcdcdc;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+
+}
+
+.cabecalho h1, .HeaderFormPessoa h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    padding-left: 20px;
+}
+
+.principal {
+    max-width: 70%;
+    margin: 0 auto;
+    margin-top: 0%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.formCadastrados {
+    overflow: hidden;
+}
+
+.lbIndex {
+    width: 5%;
+    margin-bottom: 5px;
+}
+
+.inputsCadastrados{
+    width: calc(15% - 10px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.filtro { 
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+        
+       
+    border: none;
+    border-radius: 5px;
+        
+       
+    cursor: pointer;
+}
+
+.filtro:hover {
+        background-color: #0056b3;
+}
+
+.filtroLimpar { 
+    background-color: #8B0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    cursor: pointer;
+}
+
+.filtroLimpar:hover {
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+t
+
+th {
+    background-color: #f0f0f0;
+}
+
+#name:focus,
+#cpf:focus,
+#email:focus {
+    border-color: #007bff;
+}
+
+tr:first-child {
+    font-weight: bold;
+}
+
+.Opções {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 14px;
+}
+
+.Opções:hover {
+    border-color: #007bff;
+}
+
+.Opções:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.container-Principal {
+    max-width: 30%;
+    height: 50%;
+    margin: 0 auto;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.formsPessoa {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.LblPessoas {
+    width: 40%;
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inputstexts, .selects {
+    width: 50%;
+    padding: 10px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.btnCancelar {
+    background-color: #DCDCDC;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+
+}
+
+.btnCancelar:hover {
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btnEnviar{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+    float: right;
+}
+
+.btnEnviar:hover{
+    background-color: #0056b3;
+}

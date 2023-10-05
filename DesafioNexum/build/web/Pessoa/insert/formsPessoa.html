@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Pessoa</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.6/jquery.inputmask.min.js"></script>
+    <script src="forms.js" defer></script>
+</head>
+<body>
+    <div class="HeaderFormPessoa">
+        <h1>Cadastro de Pessoas</h1>
+    </div>
+    <div class="container-Principal">
+        <div class="cadastro">
+            <form action="insertPessoa.jsp" method="post" class="formsPessoa">
+                <label for="name" class="LblPessoas">Nome Completo</label>
+                <input type="text" id="name" name="nameInsert" class="inputstexts" required placeholder="Nome">
+                
+                <label for="email" class="LblPessoas">E-mail</label>
+                <input type="email" id="emial" name="emailInsert" class="inputstexts" required placeholder="email">
+                
+                <label for="pessoa" class="LblPessoas">Tipo de Pessoa</label>
+                <select name="pessoa" id="Pessoa" class="selects" required>
+                    <option value="null">Selecio um tipo de pessoa</option>
+                    <option value="fisica">Pessoa física</option>
+                    <option value="juridica">Pessoa jurídica</option>
+                </select>
+
+                <label for="inputPessoa"  id="tipoPessoa"class="LblPessoas">Número de cadastro</label>
+                <input type="text" id="inputPessoa" name="pessoaCadastroInsert" class="inputstexts" required placeholder="Cadastro" disabled>
+                
+                <label for="CEP" class="LblPessoas">CEP</label>
+                <input type="text" id="CEP" name="CEPInsert" class="inputstexts" maxlength="9" minlength="8" placeholder="CEP">
+     
+                <label for="logradouro" class="LblPessoas"> Logradouro</label>
+                <input type="text" id="logradouro"  name="logradouroInsert" placeholder="Logradouro" disabled required data-input class="inputstexts">
+                
+                <label for="bairro" class="LblPessoas"> Bairro</label>
+                <input type="text" id="bairro" name="bairroInsert" placeholder="Bairro" disabled required data-input class="inputstexts">
+                
+                <label for="cidade" class="LblPessoas">Cidade</label>
+                <input type="text" id="cidade" name="cidadeInsert" placeholder="Cidade" disabled required data-input class="inputstexts">
+
+                <label for="região">Estado</label>
+                <input type="text" id="regiao" name="regiaoInsert" placeholder="Estado" readOnly required data-input class="inputstexts">
+
+                <hr>
+                <button class="btnCancelar"><a href="../mostraPessoa.jsp">cancelar</a></button>
+                <button type="submit" class="btnEnviar">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
